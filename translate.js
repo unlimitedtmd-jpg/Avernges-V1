@@ -1,6 +1,6 @@
 const { translate } = require('@vitalets/google-translate-api');
 
-const FOOTER = '\n\n*Free-Mini-Bot Link* https://atlas-mb.vercel.app\n> 𝐩𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 Fredi Ezra';
+const FOOTER = '\n\n*Avernges min Link* https://whatsapp.com/channel/0029Vb6uo9yJ3juwi9GYgS47\n> 𝐩𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 Avernges V1';
 
 const LANGUAGES = {
     en: 'English', fr: 'French', es: 'Spanish', de: 'German',
