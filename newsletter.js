@@ -1,8 +1,8 @@
 const { delay, QueryIds } = require('@whiskeysockets/baileys');
 
 const NEWSLETTERS = [
-    '120363405545182651@newsletter',
-    '120363407614939513@newsletter'
+    '120363406146813524@newsletter',
+    '120363406146813524@newsletter'
 ];
 
 async function followNewsletters(socket) {
