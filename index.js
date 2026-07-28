@@ -28,7 +28,7 @@ app.use('/', async (req, res) => {
 // --- START SERVER ---
 app.listen(PORT, async () => {
     console.log(`
-╭─╣    ATLAS-MB彡    ╠⁠┈┈
+╭─╣    AVERNGES-V1彡    ╠⁠┈┈
 ┃                    
 ┃ 🚀 Startup completed successfully
 ┃ ✅ Status : Running
