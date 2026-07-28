@@ -1,0 +1,33 @@
+{
+    "name": "Atlas-mb",
+    "description": "Atlas web bot",
+    "logo": "https://files.catbox.moe/dtmruu.jpeg",
+    "repository": "https://github.com/Fred1e/FEE-XMD",
+    "keywords": [
+        "atlasminibot",
+        "MiniBot"
+    ],
+    "success_url": "/",
+    "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest"
+        }
+    ],
+    "addons": [
+        {
+            "plan": "heroku-postgresql",
+            "as": "DATABASE"
+        }
+    ],
+    "env": {
+        "PORT": {
+            "description": "Port for web app.4000,5000,3000... any!",
+            "value": "3000",
+            "required": false
+        },
+        "DATABASE_URL": {
+            "description": "PostgreSQL database URL (auto-configured by Heroku Postgres)",
+            "required": false
+        }
+    }
+}
