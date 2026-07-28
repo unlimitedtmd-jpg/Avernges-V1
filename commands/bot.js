@@ -1,0 +1,36 @@
+module.exports = {
+    name: 'bot',
+    async execute(socket, msg, number, userConfig, loadUserConfigFromMongo) {
+        const sanitized = (number || '').replace(/[^0-9]/g, '');
+        const cfg = await loadUserConfigFromMongo(sanitized) || {};
+        const botName = cfg.botName || 'ATLAS-MB彡';
+
+        const statusText = `─╣ ⚠️ ATLAS • MINI • BOT ⚠️ ╠⁠┈
+
+╭─╣
+┋  🟢 SYSTEM IS ACTIVE
+╰─╣⁠
+
+⚡ STATUS   : ONLINE
+🤖 BOT      : ATLAS-MB彡
+👑 OWNER    : FREDI
+🧠 MEMORY  : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB
+
+━━━━━━━━━━━━━━━━
+🗺️ ATLAS-MINI-BOT 🗺️`;
+
+        await socket.sendMessage(msg.key.remoteJid, {
+            text: statusText,
+            contextInfo: {
+                externalAdReply: {
+                    title: `${botName} is Active`,
+                    body: "System: Operational",
+                    thumbnailUrl: cfg.logo || 'https://files.catbox.moe/dtmruu.jpeg',
+                    sourceUrl: "https://atlas-mb.vercel.app",
+                    mediaType: 1,
+                    renderLargerThumbnail: true
+                }
+            }
+        }, { quoted: msg });
+    }
+};
