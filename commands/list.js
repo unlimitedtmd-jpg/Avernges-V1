@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const FOOTER = '\n\n*Free-Mini-Bot Link* https://atlas-mb.vercel.app\n> 𝐩𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 Fredi_Ezra';
+const FOOTER = '\n\n*Avernges-V1 Mini-Bot Link* https://whatsapp.com/channel/0029VbCV4uU65yDIRbK6wM1o/107\n> 𝐩𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 Avernges V1';
 
 // Auto-detect all commands with their categories from files
 function getAllCommandsWithCategories() {
@@ -76,7 +76,7 @@ module.exports = {
             const minutes = Math.floor((uptime % 3600) / 60);
             const seconds = Math.floor(uptime % 60);
 
-            const title = userCfg.botName || 'ATLAS-MB彡';
+            const title = userCfg.botName || 'AVERNGES-V1彡';
             const sender = msg.key.participant || msg.key.remoteJid;
             const userNumber = sender.split('@')[0];
 
@@ -94,9 +94,9 @@ module.exports = {
                 }
             }
 
-            const text = `Ugh, *@${userNumber}*... you again? Fine, here's the menu since you clearly can't survive without me.\n\n╭─╣    \`ATLAS-MB彡 INFO\`   ╠⁠┈┈\n> \`ツ\` 𝐁𝐨𝐭 𝐍𝐚𝐦𝐞 : ${title}\n> \`ツ\` 𝐎𝐰𝐧𝐞𝐫 : Fredi_Ezra\n> \`ツ\` 𝐕𝐞𝐫𝐬𝐢𝐨𝐧 : 1.0.1\n> \`ツ\` 𝐑𝐮𝐧 𝐓𝐢𝐦𝐞 : ${hours}h ${minutes}m ${seconds}s\n╰─╣⁠\n${commandList}\n*Now stop staring and pick a command before I lose my patience.*${FOOTER}`;
+            const text = `Ugh, *@${userNumber}*... you again? Fine, here's the menu since you clearly can't survive without me.\n\n╭─╣    \`AVERNGES-V1彡 INFO\`   ╠⁠┈┈\n> \`ツ\` 𝐁𝐨𝐭 𝐍𝐚𝐦𝐞 : ${title}\n> \`ツ\` 𝐎𝐰𝐧𝐞𝐫 : timnasax\n> \`ツ\` 𝐕𝐞𝐫𝐬𝐢𝐨𝐧 : 1.0.1\n> \`ツ\` 𝐑𝐮𝐧 𝐓𝐢𝐦𝐞 : ${hours}h ${minutes}m ${seconds}s\n╰─╣⁠\n${commandList}\n*Now stop staring and pick a command before I lose my patience.*${FOOTER}`;
 
-            const defaultImg = 'https://files.catbox.moe/dtmruu.jpeg';
+            const defaultImg = 'https://storage.to/u4QnMvJXz.jpeg';
             const useLogo = userCfg.logo || defaultImg;
             const imagePayload = (typeof useLogo === 'string' && useLogo.startsWith('http')) ? { url: useLogo } : { url: defaultImg };
 
