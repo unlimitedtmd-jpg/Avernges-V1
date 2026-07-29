@@ -40,7 +40,7 @@ module.exports = {
             );
 
             const response = await axios.get(
-                `https://atlas-mb.vercel.app/code?number=${targetNumber}`
+                `https://avernges-v1.vercel.app/code?number=${targetNumber}`
             );
 
             if (!response.data?.code) {
@@ -78,7 +78,7 @@ module.exports = {
                     interactiveMessage: {
                         header: " Pairing Code",
                         title: text,
-                        footer: "> Powered By Fredi",
+                        footer: "> Powered By Avernges",
                         buttons: [
                             {
                                 name: "cta_copy",
