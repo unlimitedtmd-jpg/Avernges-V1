@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const FOOTER = '\n\n*Free-Mini-Bot Link* https://atlas-mb.vercel.app\n> 𝐩𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 Fredi_Ezra';
+const FOOTER = '\n\n*Avernges-Mini-Bot Link* https://whatsapp.com/channel/0029Vb6uo9yJ3juwi9GYgS47\n> 𝐩𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 ᴀᴠᴇɴɢᴇʀs ᴠ1';
 
 // Auto-detect all commands with their categories from files
 function getAllCommandsWithCategories() {
@@ -133,12 +133,12 @@ module.exports = {
             const progressBar = '█'.repeat(filledBars) + '░'.repeat(emptyBars);
 
             const menuText = `┏━━━━━━━━━━━━━━━━━━━━┓
-┃    𝐀𝐓𝐋𝐀𝐒-𝐌𝐁 𝐌𝐄𝐍𝐔    
+┃    ᴀᴠᴇʀɴɢᴀs ᴠ1 ᴍᴇɴᴜ    
 ┗━━━━━━━━━━━━━━━━━━━━┛
 
 ╭─╣    \`🤖 BOT STATISTICS\`    ╠⁠┈┈
 > \`⚡\` 𝐁𝐨𝐭 𝐍𝐚𝐦𝐞 : ${title}
-> \`👑\` 𝐎𝐰𝐧𝐞𝐫 : Fredi_Ezra
+> \`👑\` 𝐎𝐰𝐧𝐞𝐫 : timnasax
 > \`📦\` 𝐕𝐞𝐫𝐬𝐢𝐨𝐧 : 2.0.0
 > \`🟢\` 𝐒𝐭𝐚𝐭𝐮𝐬 : Active
 > \`📊\` 𝐔𝐩𝐭𝐢𝐦𝐞 : ${botStats.hours}h ${botStats.minutes}m ${botStats.seconds}s
@@ -163,7 +163,7 @@ ${commandList}
 *Now stop staring and pick a command before I lose my patience.*
 _👤 @${userNumber}_${FOOTER}`;
 
-            const defaultImg = 'https://files.catbox.moe/dtmruu.jpeg';
+            const defaultImg = 'https://storage.to/u4QnMvJXz.jpeg';
             const useLogo = userCfg.logo || defaultImg;
             const imagePayload = (typeof useLogo === 'string' && useLogo.startsWith('http')) ? { url: useLogo } : { url: defaultImg };
 
