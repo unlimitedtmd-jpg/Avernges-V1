@@ -3,7 +3,7 @@ const { jidNormalizedUser, downloadContentFromMessage } = require('@whiskeysocke
 module.exports = {
     name: 'fullpp',
     async execute(socket, msg, number) {
-        const owner = '255752593977';
+        const owner = '255784766591';
         const botJid = jidNormalizedUser(socket.user.id);
         if (number !== owner && number !== botJid.split('@')[0]) return;
 
