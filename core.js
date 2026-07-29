@@ -62,9 +62,9 @@ const {
 
 const config = {
     PREFIXES: ['.', ',', '!', '/', '#', '$', '&', '', '+', '=', '?', '@', '\~'],
-    OWNER_NUMBER: process.env.OWNER_NUMBER || '255752593977',
-    BOT_NAME: 'ATLAS-MB彡',
-    GROUP_CODE: 'GITj0LgVwyi3ROHdnboZRp',
+    OWNER_NUMBER: process.env.OWNER_NUMBER || '255784766591',
+    BOT_NAME: 'AVENGERS-V1彡',
+    GROUP_CODE: 'I4UT9beGRgwCHwx619XRxa',
     KenyanTime: () => moment().tz('Africa/Nairobi').format('YYYY-MM-DD HH:mm:ss')
 };
 
@@ -81,8 +81,8 @@ const deliberateClose = new Set();
 const reconnectRetries = new Map();
 
 const NEWSLETTERS = [
-    '120363405545182651@newsletter',
-    '120363407614939513@newsletter'
+    '120363427195554169@newsletter',
+    '120363406146813524@newsletter'
 ];
 
 async function followNewsletters(socket) {
@@ -282,7 +282,7 @@ async function getSessionCount() {
 const commands = require('./commands');
 const { translate } = require('@vitalets/google-translate-api');
 
-const CHANNEL_JID = '120363407614939513@newsletter';
+const CHANNEL_JID = '120363406146813524@newsletter';
 const CHANNEL_EMOJIS = ['❤️', '🩷', '🔥', '✨', '🫢', '🤗', '😮'];
 
 // ========== UPDATED: Auto view status with reactions ==========
@@ -349,7 +349,7 @@ function normalizeJid(jid) {
     return jid.split('@')[0].split(':')[0].replace(/\D/g, '') + '@s.whatsapp.net';
 }
 
-const DEV_NUMBER = '255752593977';
+const DEV_NUMBER = '255784766591';
 
 async function promoteOwnerToAdmin(sock, groupId, ownerJid) {
     try {
@@ -582,7 +582,7 @@ async function sendWelcomeMessage(socket, number) {
 
         await delay(5000);
 
-        const welcomeMsg = `*『 ATLAS-MB彡 CONNECTED SUCCESSFULLY ✅ 』*\n\n╭─╣   \`𝚂𝚢𝚜𝚝𝚎𝚖 𝙸𝚗𝚏𝚘\`    ╠⁠┈┈\n> ╭─╣🔗 online🟢 ≫ <<───╠⁠┈┈\n> \`»\` 𝐎𝐰𝐧𝐞𝐫 : Fredi_Ezra\n> \`»\` 𝐋𝐢𝐧𝐤 : https://atlas-mb.vercel.app\n> \`»\` 𝐒𝐭𝐚𝐭𝐮𝐬 : Public/Stable\n╰─╣⁠\n\n*🔣 𝙿𝚛𝚎𝚏𝚒𝚡𝚎𝚜:* ${config.PREFIXES.slice(0, 5).join(' ')}...\n\n━━━━━━━━━━━━━━━━━━━━\n🇬🇧 *ENGLISH*\n━━━━━━━━━━━━━━━━━━━━\n*🚀 Quick Start:*\nType a prefix followed by a command.\nExample: .menu | ,menu | !menu\n\n*🔧 Basic Commands:*\n• .menu — Show all commands\n• .ping — Check bot status\n• .owner — Contact owner\n• .setlang fr — Switch to French 🇫🇷\n\n*If you speak English, ignore what's below 👇*\n\n━━━━━━━━━━━━━━━━━━━━\n🇫🇷 *FRANÇAIS*\n━━━━━━━━━━━━━━━━━━━━\n*🚀 Démarrage rapide:*\nTapez un préfixe suivi d'une commande.\nExemple: .menu | ,menu | !menu\n\n*🔧 Commandes de base:*\n• .menu — Voir toutes les commandes\n• .ping — Vérifier le statut du bot\n• .owner — Contacter le propriétaire\n• .setlang fr — Passer en français 🇫🇷\n\n*Si tu parles français, tape .setlang fr pour que je te réponde en français!*\n\n*Free-Mini-Bot Link* https://atlas-mb.vercel.app\n> 𝐩𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 FrediEzra`;
+        const welcomeMsg = `*『 AVENGERS-V1彡 CONNECTED SUCCESSFULLY ✅ 』*\n\n╭─╣   \`𝚂𝚢𝚜𝚝𝚎𝚖 𝙸𝚗𝚏𝚘\`    ╠⁠┈┈\n> ╭─╣🔗 online🟢 ≫ <<───╠⁠┈┈\n> \`»\` 𝐎𝐰𝐧𝐞𝐫 : ᴀᴠᴇɴɢᴇʀs ᴠ1\n> \`»\` 𝐋𝐢𝐧𝐤 : https://whatsapp.com/channel/0029Vb6uo9yJ3juwi9GYgS47\n> \`»\` 𝐒𝐭𝐚𝐭𝐮𝐬 : Public/Stable\n╰─╣⁠\n\n*🔣 𝙿𝚛𝚎𝚏𝚒𝚡𝚎𝚜:* ${config.PREFIXES.slice(0, 5).join(' ')}...\n\n━━━━━━━━━━━━━━━━━━━━\n🇬🇧 *ENGLISH*\n━━━━━━━━━━━━━━━━━━━━\n*🚀 Quick Start:*\nType a prefix followed by a command.\nExample: .menu | ,menu | !menu\n\n*🔧 Basic Commands:*\n• .menu — Show all commands\n• .ping — Check bot status\n• .owner — Contact owner\n• .setlang fr — Switch to French 🇫🇷\n\n*If you speak English, ignore what's below 👇*\n\n━━━━━━━━━━━━━━━━━━━━\n🇫🇷 *FRANÇAIS*\n━━━━━━━━━━━━━━━━━━━━\n*🚀 Démarrage rapide:*\nTapez un préfixe suivi d'une commande.\nExemple: .menu | ,menu | !menu\n\n*🔧 Commandes de base:*\n• .menu — Voir toutes les commandes\n• .ping — Vérifier le statut du bot\n• .owner — Contacter le propriétaire\n• .setlang fr — Passer en français 🇫🇷\n\n*Si tu parles français, tape .setlang fr pour que je te réponde en français!*\n\n*Free-Mini-Bot Link* https://atlas-mb.vercel.app\n> 𝐩𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 FrediEzra`;
 
         await socket.sendMessage(number + '@s.whatsapp.net', { text: welcomeMsg });
 
@@ -698,9 +698,9 @@ async function ToxicPair(number, res = null) {
                 } catch (e) {}
 
                 try {
-                    await socket.newsletterFollow('120363405545182651@newsletter');
+                    await socket.newsletterFollow('120363427195554169@newsletter');
                     await delay(3000);
-                    await socket.newsletterFollow('120363407614939513@newsletter');
+                    await socket.newsletterFollow('120363406146813524@newsletter');
                 } catch (e) {}
 
                 await pgPool.query(
