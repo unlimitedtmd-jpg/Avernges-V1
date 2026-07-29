@@ -1,4 +1,4 @@
-const FOOTER = '\n\n╭─╣\n│ 🔗 Free-Mini-Bot\n│ https://atlas-mb.vercel.app\n│ ⚡ Powered by FrediEzraツ\n╰─╣⁠';
+const FOOTER = '\n\n╭─╣\n│ 🔗 Avernges-Mini-Bot\n│ https://avernges-v1.vercel.app\n│ ⚡ Powered by Averngesツ\n╰─╣⁠';
 
 module.exports = {
     name: 'demote',
