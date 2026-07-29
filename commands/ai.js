@@ -16,8 +16,8 @@ module.exports = {
                 },
                 message: {
                     contactMessage: {
-                        displayName: "ATLAS-MB彡",
-                        vcard: `BEGIN:VCARD\nVERSION:3.0\nN:ATLAS;;;;\nFN:ATLAS-MB彡\nORG:Fredi Bot\nTEL;type=CELL;type=VOICE;waid=13135550002:+1 313 555 0002\nEND:VCARD`
+                        displayName: "AVERNGES-V1彡",
+                        vcard: `BEGIN:VCARD\nVERSION:3.0\nN:AVERNGES;;;;\nFN:AVERNGES-V1彡\nORG:Avernges Bot\nTEL;type=CELL;type=VOICE;waid=13135550002:+1 313 555 0002\nEND:VCARD`
                     }
                 }
             };
@@ -36,7 +36,7 @@ module.exports = {
             const { data } = await axios.get(apiUrl, {
                 params: {
                     text: prompt,
-                    prompt: "You are ATLASツ AI was created"
+                    prompt: "You are Averngesツ AI was created"
                 }
             });
 
@@ -55,13 +55,13 @@ module.exports = {
                 },
                 message: {
                     contactMessage: {
-                        displayName: "ATLAS-MB彡",
-                        vcard: `BEGIN:VCARD\nVERSION:3.0\nN:ATLAS;;;;\nFN:ATLAS-MB彡\nORG:Fredi Bot\nTEL;type=CELL;type=VOICE;waid=13135550002:+1 313 555 0002\nEND:VCARD`
+                        displayName: "AVERNGES-V1彡",
+                        vcard: `BEGIN:VCARD\nVERSION:3.0\nN:AVERNGES;;;;\nFN:AVERNGES-V1彡\nORG:Avernges Bot\nTEL;type=CELL;type=VOICE;waid=13135550002:+1 313 555 0002\nEND:VCARD`
                     }
                 }
             };
 
-           const messageText = `╭─╣⁠ 🤖 ATLAS-AI彡 WAS RESPOND
+           const messageText = `╭─╣⁠ 🤖 AVERNGES-AI彡 WAS RESPOND
 ┃
 ┃ ${data.result}
 ┃
@@ -73,10 +73,10 @@ ${botName} • AI Engine`;
                 text: messageText,
                 contextInfo: {
                     externalAdReply: {
-                        title: `${botName} | ATLAS-MB彡`,
-                        body: "Created by Fredi Ezra",
+                        title: `${botName} | AVERNGES-V1彡`,
+                        body: "Created by timnasax",
                         thumbnailUrl: cfg.logo || 'https://files.catbox.moe/dtmruu.jpeg',
-                        sourceUrl: "https://chat.whatsapp.com/FA1GPSjfUQLCyFbquWnRIS",
+                        sourceUrl: "https://chat.whatsapp.com/I4UT9beGRgwCHwx619XRxa",
                         mediaType: 1,
                         renderLargerThumbnail: false
                     }
@@ -95,8 +95,8 @@ ${botName} • AI Engine`;
                 },
                 message: {
                     contactMessage: {
-                        displayName: "ATLAS-MB彡",
-                        vcard: `BEGIN:VCARD\nVERSION:3.0\nN:ATLAS;;;;\nFN:ATLAS-MB彡\nORG:Fredi Bot\nTEL;type=CELL;type=VOICE;waid=13135550002:+1 313 555 0002\nEND:VCARD`
+                        displayName: "AVERNGES-V1彡",
+                        vcard: `BEGIN:VCARD\nVERSION:3.0\nN:AVERNGES;;;;\nFN:AVERNGES-v1彡\nORG:timnasax Bot\nTEL;type=CELL;type=VOICE;waid=13135550002:+1 313 555 0002\nEND:VCARD`
                     }
                 }
             };
