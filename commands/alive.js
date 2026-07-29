@@ -3,14 +3,14 @@ module.exports = {
     async execute(socket, msg, number, userConfig, loadUserConfigFromMongo) {
         const sanitized = (number || '').replace(/[^0-9]/g, '');
         const cfg = await loadUserConfigFromMongo(sanitized) || {};
-        const botName = cfg.botName || 'ATLAS-MB彡';
+        const botName = cfg.botName || 'AVERNGES-V1彡';
 
         const statusText = `
 
 ╭─╣ SYSTEM ACTIVE ╠⁠┈┈
 │ ⚡ Status     : ONLINE
 │ 🤖 Bot Name   : ${botName}
-│ 👑 Owner      : Fredi
+│ 👑 Owner      : timnasax
 │ 🧠 Memory     : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB
 ╰─╣⁠
 
@@ -24,8 +24,8 @@ module.exports = {
                 externalAdReply: {
                     title: `${botName} is Active`,
                     body: "System: Operational",
-                    thumbnailUrl: cfg.logo || 'https://files.catbox.moe/dtmruu.jpeg',
-                    sourceUrl: "https://atlas-mb.vercel.app",
+                    thumbnailUrl: cfg.logo || 'https://storage.to/u4QnMvJXz.jpeg',
+                    sourceUrl: "https://whatsapp.com/channel/0029Vb6uo9yJ3juwi9GYgS47",
                     mediaType: 1,
                     renderLargerThumbnail: true
                 }
